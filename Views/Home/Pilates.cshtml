@@ -1,0 +1,59 @@
+
+@{
+    ViewData["Title"] = "Pilates Page";
+}
+
+
+<div style="height: 100px;"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 style="color: #62c8d2; text-align: center;">About Pilates</h1>
+            <hr>
+            <img src="/images/pilates.jpg" style="width: 350px; height: 300px; border-radius: 20%; float: left; margin-right: 50px; margin-bottom: 20px;">
+            <div style="margin-top: 100px;">
+                <p style="font-size: large;">
+                    Pilates is a physical fitness system that was developed in the early 20th century by 
+                    Joseph Pilates. It focuses on the principles of controlled movements, breath awareness, 
+                    and mindful muscle engagement to improve flexibility, strength, and overall body awareness. 
+                    Pilates exercises are designed to target the deep muscles of the core, emphasizing the importance 
+                    of a strong and stable center to support the body's movements.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div>
+                <img src="/images/pilates2.jpg" style="width: 350px; height: 300px; float: right; border-radius: 20%; margin-left: 50px; margin-bottom: 20px;">
+                <p style="font-size: large;">The foundation of Pilates lies in its emphasis on the mind-body connection. 
+                    Practitioners are encouraged to concentrate on precise and controlled movements, coordinating 
+                    them with intentional breathing patterns. The exercises often utilize specialized equipment 
+                    like the reformer or mat-based routines that rely on body weight for resistance. 
+                    Pilates can be adapted to various fitness levels, making it accessible to beginners and 
+                    challenging for advanced practitioners alike.</p>
+            </div>
+            
+
+        </div>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <img src="/images/pilates3.jpg" style="width: 350px; height: 300px; border-radius: 20%; float: left; margin-right: 50px; margin-bottom: 20px;">
+            <div style="margin-top: 100px;">
+                <p style="font-size: large;">One of the key benefits of Pilates is its focus on improving posture and alignment. 
+                    The system promotes a balanced development of muscles, reducing the risk of injury and enhancing 
+                    overall body awareness. Additionally, Pilates is known for promoting long, lean muscles and improving 
+                    flexibility without placing excessive stress on the joints. As a result, it has gained popularity 
+                    not only as a fitness regimen but also as a rehabilitation tool for individuals recovering from 
+                    injuries or seeking a low-impact exercise option.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+@await Html.PartialAsync("_footer")

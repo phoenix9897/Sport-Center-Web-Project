@@ -1,0 +1,34 @@
+@model Users
+@{
+    ViewData["Title"] = "Log-in Page";
+}
+
+<div style="height: 650px; background-image: url(/images/background2.jpg);">
+
+    <div style="height: 600px; display: flex; justify-content: end; align-items: center;">
+        <div class="card border-info text-center " style="width: 300px; background-color: #526D82; margin-right: 200px;">
+            <div class="mb-3 mx-3 my-3">
+                <h1 style="color: #62c8d2;">LOG IN</h1>
+                <form asp-controller="Autentication" asp-action="LogIn" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label text-white">Email</label>
+                        <input asp-for="Email" class="form-control">
+                        <span style="color: white;" asp-validation-for="Email"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label text-white">Password</label>
+                        <input asp-for="Password" class="form-control">
+                        <span style="color: white;" asp-validation-for="Password"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Log In</button>
+                    <div style="height: 5px;"></div>
+            
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+

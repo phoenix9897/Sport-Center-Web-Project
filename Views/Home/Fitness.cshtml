@@ -1,0 +1,61 @@
+
+@{
+    ViewData["Title"] = "Fitness Page";
+}
+
+
+<div style="height: 100px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: #62c8d2; text-align: center;">About Fitness</h1>
+                <hr>
+                <img src="/images/fitness.jpeg" style="width: 350px; height: 300px; border-radius: 20%; float: left; margin-right: 50px; margin-bottom: 20px;">
+                <div style="margin-top: 100px;">
+                    <p style="font-size: large;">
+                        Fitness refers to the overall state of health and well-being of an individual,
+                        encompassing various physical and mental attributes. Physical fitness, 
+                        a key component of overall fitness, is the ability of the body to perform daily 
+                        activities efficiently without undue fatigue, and it is often categorized into components 
+                        such as cardiovascular endurance, muscular strength, flexibility, and body composition.
+                        Achieving and maintaining fitness involves regular physical activity, balanced nutrition, 
+                        and adequate rest.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="col">       
+                <div>
+                    <img src="/images/fitness2.jpg" style="width: 350px; height: 300px; float: right; border-radius: 20%; margin-left: 50px; margin-bottom: 20px;">
+                    
+                        <p style="font-size: large;">Cardiovascular endurance is crucial for a healthy heart and circulatory
+                            system, and it is typically enhanced through activities like running, swimming, or cycling.
+                            Muscular strength and endurance contribute to the ability to perform tasks requiring physical 
+                            strength and resistance over time. Flexibility, on the other hand, ensures a full range of motion 
+                            in joints and muscles, reducing the risk of injuries and promoting overall mobility. 
+                            Body composition, which involves the proportion of fat and non-fat mass in the body, 
+                            is a key indicator of fitness and health.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="col">  
+                <img src="/images/fitness3.jpg" style="width: 350px; height: 300px; border-radius: 20%; float: left; margin-right: 50px; margin-bottom: 20px;">
+                <div style="margin-top: 100px;">
+                    <p style="font-size: large;">Regular exercise not only improves physical fitness but also has positive effects 
+                        on mental well-being. Exercise releases endorphins, which are natural mood enhancers, and it 
+                        can help reduce stress and anxiety. Additionally, a well-rounded fitness routine can enhance 
+                        cognitive function, improve sleep quality, and boost overall energy levels. In summary, 
+                        fitness is a holistic concept that encompasses various dimensions of health, requiring a 
+                        balanced approach to physical activity, nutrition, and mental well-being.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_footer")

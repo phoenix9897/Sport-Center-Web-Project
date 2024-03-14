@@ -1,0 +1,39 @@
+@model Users
+@{
+    ViewData["Title"] = "Sign-up Page";
+}
+
+<div style="height: 700px; background-image: url(/images/background.jpg);">
+    <div style="display: flex; justify-content: center; align-items: center; height: 650px;">
+        <div class="card border-info text-center" style="width: 400px; background-color: #526D82;">
+            <div class="mb-3 mx-3 my-3">
+                <h1 style="color: #62c8d2; text-align: center;">SIGN UP</h1>
+                <form asp-controller="Autentication" asp-action="SignUp" method="post" enctype="multipart/form-data">
+                    <div style="color: white;" asp-validation-summary="All"></div>
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label text-white">Name</label>
+                        <input asp-for="Name" class="form-control">
+                        <span style="color: white;" asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Surname" class="form-label text-white">Surname</label>
+                        <input asp-for="Surname" class="form-control">
+                        <span style="color: white;" asp-validation-for="Surname"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label text-white">Email</label>
+                        <input asp-for="Email" class="form-control">
+                        <span style="color: white;" asp-validation-for="Email"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label text-white">Password</label>
+                        <input asp-for="Password" class="form-control">
+                        <span style="color: white;" asp-validation-for="Password"></span>
+                    </div>
+                    <button type="submit" class="btn btn-info">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

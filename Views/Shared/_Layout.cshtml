@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!--<link rel="stylesheet" href="~/WebAppProject.styles.css" asp-append-version="true" />-->
+</head>
+<body>
+    <header>
+        <section id="navbarPart">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="/images/gymLogo3.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Home" asp-action="Trainers">Trainers</a>
+                        </li>
+                        <li id="navbarDropdown">
+                            <a class="nav-link text-light" href="">
+                            Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Fitness">Fitness</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Kickbox">Kick Box</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Pilates">Pilates</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Zumba">Zumba</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Coaching">Coaching</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+        
+                        <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Autentication" asp-action="LogOut">Log Out</a> <!-- Log ın den sonra oluşacak-->
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Autentication" asp-action="LogIn">Log In</a>
+                        </li>
+                    
+                    
+                        <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Autentication" asp-action="SignUp">Sign Up</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="SearchBtn btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
